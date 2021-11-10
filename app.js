@@ -30,7 +30,7 @@ app.set('view engine', 'ejs');
 
 /* EXPRESS SESSION */
 app.use(session({
-  secret: process.env.SECRET,
+  secret: 'sadasdasdsad',
   resave: false,
   saveUninitialized: false,
   cookie: { 
