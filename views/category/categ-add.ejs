@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+
+    <h1 class="text text-success text-center">Category qo'shish</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form action="/category/add" method="post">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input name="name" type="text" id="name" class="form-control" />
+                                <label class="form-label" for="name">Category Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include('../partials/footer.ejs') %>

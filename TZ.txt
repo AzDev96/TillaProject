@@ -1,0 +1,14 @@
+CRUD - Tilla tizim bo'ladi 
+
+Tilla ko'rinishi qanday xsusiyatlari bo'ladi: 
+1) Rasim (Ko'p rasim qo'shadigan)
+2) Tilla Categoriyasi - Sirga, Uzuk, Sepochka, Braslet, Kamplekt
+3) Probasi 
+4) Toshi 
+5) Umumiy vazni(Toshi bilan)  
+6) Toshsiz vazni(Sof tilloni vazni)
+7) Qaerniki : (Zavadskoy, Rassiyskiy) 
+8) Narxi(Olingan narxi)(Sof tilla toshsiz olingan narxi) -  
+9) Sotilish narxi 
+10) Sotilganligi haqida malumot
+11) raqami

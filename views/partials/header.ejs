@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <%- include('layouts/style.ejs') %>
+  <title>Asosiy sahifa</title>
+  <style>
+    header .navbar{
+      background: #F6D167;
+    }
+    header .navbar .navbar-nav .nav-item .nav-link{
+      color: #297F87 !important;
+      font-weight: 600;
+    }
+    header ul{
+      list-style: none;
+    }
+    .navbar-toggler-icon{
+      color: #297F87 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">  <img src="/images/tilla.png" alt="png" width="50"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Тиллолар</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/add">Тило кушиш</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/category/add">Категория кушиш</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/category/all">Категориялар</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>

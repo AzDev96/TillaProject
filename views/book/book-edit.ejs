@@ -1,0 +1,78 @@
+    <%- include('../partials/header.ejs') %>
+    <style>
+        h1{
+            color: #000;
+            font-size: 35px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+    <h1 >Тилла узгартириш</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form action="/book/update/<%= book._id %>" method="post" enctype="multipart/form-data">
+                    <!-- Images -->
+                    <h4 class="text-center">Расим узгартириш</h4>
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input name="image" type="file" class="form-control"> 
+                        <img src="/<%= book.image %>" alt="" width="100">
+                        <input type="hidden" name="old_image" value="<%= book.image %>">
+                        
+                    </div>
+                   
+                    <h4 class="text-center">Пробаси узгартириш</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.proba %>"  name="proba" type="text" id="proba" class="form-control" />
+                        <label class="form-label" for="proba">Пробаси</label>
+                    </div>
+                    <h4 class="text-center">Тоши узгартириш</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.toshi %>" name="tosh" type="text" id="toshi" class="form-control" />
+                        <label class="form-label" for="toshi">Тоши</label>
+                    </div>
+                    <h4 class="text-center">Умумий вазни узгартириш</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.ToshBilanVazni %>" name="massa" type="text" id="vazni" class="form-control" />
+                        <label class="form-label" for="vazni">Умумий вазни</label>
+                    </div>
+                    <h4 class="text-center">Тошсиз вазни(Соф тилла вазни) узгартириш</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.AllVazni %>" name="massaAll" type="text" id="umimu" class="form-control" />
+                        <label class="form-label" for="umimu">Тошсиз вазни(Соф тилла вазни)</label>
+                    </div>
+                    <h4 class="text-center">Каерники(завадской-рассийский)</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.qaerniki %>" name="qaerniki" type="text" id="qaer" class="form-control" />
+                        <label class="form-label" for="qaer">Каерники(завадской-рассийский)</label>
+                    </div>
+                    <h4 class="text-center">Нархи(олинган нархи)</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.OlinganNarxi %>" name="price" type="text" id="nar" class="form-control" />
+                        <label class="form-label" for="nar">Нархи(олинган нархи)</label>
+                    </div>
+                    <h4 class="text-center">Сотилиш нархи</h4>
+                    <!-- probasi -->
+                    <div class="form-outline mb-4">
+                        <input value="<%= book.SotilishNarxi%>" name="priceAll" type="text" id="narxx" class="form-control" />
+                        <label class="form-label" for="narxx">Сотилиш нархи</label>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Базага юбориш</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include('../partials/footer.ejs') %>

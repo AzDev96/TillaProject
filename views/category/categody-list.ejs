@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+    <div class="container">
+        <h1>Category Bo'limi</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% categoryAll.forEach(cat=> { %>
+                    <tr class="table-warning">
+                        <th scope="row"> <%= cat._id %></th>
+                        <td> <b><%= cat.name %></b> </td>
+                        <td>
+                            <a class="btn btn-warning" href="/category/all/<%= cat._id %>">Edit</a>
+                            <a class="btn btn-danger" href="/category/all/<%= cat._id %>">Delete</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>

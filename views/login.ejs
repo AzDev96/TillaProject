@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+    <div class="container">
+        <h2 class="text-center">Krish LOGIN</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <% if(message.length > 0){  %>
+                   <div class="alert alert-danger"><%= message  %> </div> 
+                <% } %>    
+                <form method="post" action="login">
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" name="email" id="email" class="form-control" />
+                        <label class="form-label" for="email">Email address</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" name="pass" id="pass" class="form-control" />
+                        <label class="form-label" for="pass">Password</label>
+                    </div>
+
+                
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include('partials/footer.ejs') %>
